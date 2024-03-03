@@ -1,0 +1,15 @@
+[package]
+name = "obs-crashdump"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name="00crashdump"
+crate-type = ["cdylib"]
+
+[dependencies]
+chrono = "*"
+crash-handler = "*"
+minidump-writer = "*"
+libc = "*"
